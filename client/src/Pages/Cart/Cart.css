@@ -1,0 +1,58 @@
+.Merch{
+    border-bottom: 1px solid;
+    margin: auto;
+    width: 80%;
+}
+
+.MerchDescription{
+    display: -webkit-box;
+    max-width: 100%;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+.MerchPrice{
+    font-weight: bolder;
+    font-size: 3vh;
+    border: 1px solid;
+    padding: 1vh 3vh;
+    border-top-right-radius: 5vh;
+    border-bottom-left-radius: 5vh;
+}
+
+.Cart .Btn{
+    background-color: transparent;
+    border: 1px solid black;
+    padding-block: 1vh;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-weight: bolder;
+    box-shadow: 0px 0px 5px black;
+}
+
+.Cart .Btn:hover{
+    background-color: black;
+    color: white;
+    box-shadow: inset 0px 0px 10px #bababa;
+}
+
+.QuantityBtn{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: .7vh 2vh;
+}
+
+.QuantityBtn:active{
+    background-color: black;
+    color: white;
+}
+
+.Quantity{
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.Remove{
+    width: 5% !important;
+}

@@ -1,0 +1,30 @@
+[
+    {
+        "name":"X",
+        "image":"/Images/icons8-twitterx-50.png"
+    },
+    {
+        "name":"FaceBook",
+        "image":"/Images/icons8-facebook-64.png"
+    },
+    {
+        "name":"LikedIn",
+        "image":"/Images/icons8-linkedin-64.png"
+    },
+    {
+        "name":"Instagram",
+        "image":"/Images/icons8-instagram-64.png"
+    },
+    {
+        "name":"Tumblr",
+        "image":"/Images/icons8-tumblr-64.png"
+    },
+    {
+        "name":"Tiktok",
+        "image":"/Images/icons8-tiktok-64.png"
+    },
+    {
+        "name":"Our Location",
+        "image":"/Images/icons8-google-maps-old-50.png"
+    }
+]

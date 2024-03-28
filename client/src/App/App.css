@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Coolvetica";
+    src: local("coolvetica") , url("../fonts/coolvetica.otf") , format('otf');
+}
+@font-face {
+    font-family: "Edwardian Script ITC";
+    src: local("ITCEDSCR") , url("../fonts/ITCEDSCR.TTF") , format('truetype');
+}
+
+#root{
+    font-family: "Coolvetica";
+    letter-spacing: 2px;
+}

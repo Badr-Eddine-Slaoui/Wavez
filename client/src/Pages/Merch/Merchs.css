@@ -1,0 +1,61 @@
+.MerchBanner{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Merch .ImgContainer{
+    width: 80%;
+}
+
+.Merch .TextContainer{
+    width: 100%;
+}
+
+.Merch .TextContainer.Reversed{
+    text-align: right;
+}
+
+.Merch .TextContainer h2{
+    text-transform: capitalize;
+    letter-spacing: 1px;
+}
+
+.Merch .TextContainer p{
+    letter-spacing: 1px;
+}
+
+.Merch .TextContainer .Btn{
+    background-color: transparent;
+    border: 1px solid black;
+    padding-block: .7vh;
+    text-transform: uppercase;
+}
+
+.Merch .TextContainer .Btn:active{
+    background-color: black;
+    color: white;
+}
+
+.Merch .TextContainer .Btn span{
+    text-transform: lowercase;
+}
+
+.Merch .ImgContainer.Arrow{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 45vh;
+}
+
+.Merch .ImgContainer.Arrow img{
+    height: 20vh;
+}
+
+.Merch .ImgContainer.Arrow.Reversed{
+    align-items: start;
+}
+
+.Merch .ImgContainer.Arrow.Reversed img{
+    transform: rotate(180deg) !important;
+}

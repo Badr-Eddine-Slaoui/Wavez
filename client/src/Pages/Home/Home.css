@@ -1,0 +1,25 @@
+.ImgContainer{
+    width: 35%;
+}
+
+.TextContainer{
+    width: 85%;
+    margin-top: 5vh;
+}
+
+.TextContainer h2{
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 0;
+    font-size: 3vh;
+    font-weight: 600;
+}
+.TextContainer h2 span{
+    text-transform: capitalize;
+    font-family: "Edwardian Script ITC";
+    font-size: 9vh;
+    font-weight: normal;
+}
+.TextContainer p{
+    line-height: 2vh;
+}

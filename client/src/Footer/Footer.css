@@ -1,0 +1,25 @@
+.Menu a{
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.Quote{
+    width: 95%;
+    margin: auto;
+}
+.Quote p{
+    display: flex;
+    justify-content: space-around;
+}
+.Quote .MinText{
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 4vh;
+}
+.Quote .StyledText{
+    font-family: "Edwardian Script ITC";
+    font-size: 30vh;
+}

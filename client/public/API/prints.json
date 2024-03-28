@@ -1,0 +1,44 @@
+[
+    {
+        "id":1,
+        "title":"Feel them poster",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nobis, voluptates necessitatibus tempore ea natus nemodelectus eligendi laborum corrupti incidunt dicta dignissimos. Voluptatum cum officia reprehenderit, est eveniet fugit, eaque vel itaque natus repellat perferendis officiis porro sunt id ad mollitia, quidem nihil ex quod repudiandae? Est autem aut",
+        "image": "/public/Images/365-day_3.png",
+        "price": 20
+    },
+    {
+        "id":2,
+        "title":"The art of eyes",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nobis, voluptates necessitatibus tempore ea natus nemodelectus eligendi laborum corrupti incidunt dicta dignissimos. Voluptatum cum officia reprehenderit, est eveniet fugit, eaque vel itaque natus repellat perferendis officiis porro sunt id ad mollitia, quidem nihil ex quod repudiandae? Est autem aut",
+        "image": "/public/Images/eyes.png",
+        "price": 50
+    },
+    {
+        "id":3,
+        "title":"Angel/Demon",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nobis, voluptates necessitatibus tempore ea natus nemodelectus eligendi laborum corrupti incidunt dicta dignissimos. Voluptatum cum officia reprehenderit, est eveniet fugit, eaque vel itaque natus repellat perferendis officiis porro sunt id ad mollitia, quidem nihil ex quod repudiandae? Est autem aut",
+        "image": "/public/Images/every-angel.png",
+        "price": 30
+    },
+    {
+        "id":4,
+        "title":"FearLess poster",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nobis, voluptates necessitatibus tempore ea natus nemodelectus eligendi laborum corrupti incidunt dicta dignissimos. Voluptatum cum officia reprehenderit, est eveniet fugit, eaque vel itaque natus repellat perferendis officiis porro sunt id ad mollitia, quidem nihil ex quod repudiandae? Est autem aut",
+        "image": "/public/Images/fearless.png",
+        "price": 20
+    },
+    {
+        "id":5,
+        "title":"Baggio",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nobis, voluptates necessitatibus tempore ea natus nemodelectus eligendi laborum corrupti incidunt dicta dignissimos. Voluptatum cum officia reprehenderit, est eveniet fugit, eaque vel itaque natus repellat perferendis officiis porro sunt id ad mollitia, quidem nihil ex quod repudiandae? Est autem aut",
+        "image": "/public/Images/baggio.png",
+        "price": 50
+    },
+    {
+        "id":6,
+        "title":"Gnawa",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nobis, voluptates necessitatibus tempore ea natus nemodelectus eligendi laborum corrupti incidunt dicta dignissimos. Voluptatum cum officia reprehenderit, est eveniet fugit, eaque vel itaque natus repellat perferendis officiis porro sunt id ad mollitia, quidem nihil ex quod repudiandae? Est autem aut",
+        "image": "/public/Images/gnawa-last-Recovered.png",
+        "price": 30
+    }
+]

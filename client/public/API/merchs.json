@@ -1,0 +1,16 @@
+[
+    {
+        "id":1,
+        "title":"Tresse tee",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nobis, voluptates necessitatibus tempore ea natus nemodelectus eligendi laborum corrupti incidunt dicta dignissimos. Voluptatum cum officia reprehenderit, est eveniet fugit, eaque vel itaque natus repellat perferendis officiis porro sunt id ad mollitia, quidem nihil ex quod repudiandae? Est autem aut",
+        "image": "/Images/DSC02312.png",
+        "price": 39
+    },
+    {
+        "id":2,
+        "title":"Tresse scarf",
+        "description":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nobis, voluptates necessitatibus tempore ea natus nemodelectus eligendi laborum corrupti incidunt dicta dignissimos. Voluptatum cum officia reprehenderit, est eveniet fugit, eaque vel itaque natus repellat perferendis officiis porro sunt id ad mollitia, quidem nihil ex quod repudiandae? Est autem aut",
+        "image": "/Images/DSC02312.png",
+        "price": 49
+    }
+]
