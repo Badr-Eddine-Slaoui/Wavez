@@ -3,8 +3,11 @@ import './Merchs.css'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Merch from './Merch'
+import { useCookies } from 'react-cookie'
 
 const Merchs = () => {
+
+    const [token] = useCookies(['token'])
 
     const [merchs,setMerchs] = useState([])
 
@@ -25,18 +28,27 @@ const Merchs = () => {
     
   return (
     <div>
-      <Parallax speed={-15} opacity={[2.5,0]}>
+      <Parallax speed={-15} opacity={[2.5,-0.6]}>
         <div className="MerchBanner row w-100 mx-0">
-            <img className='w-75 p-0' src="/Images/Group 1.png" alt="" />
+            <img className='w-100 p-0' src="/Images/lines (19).png" alt="" />
         </div>
       </Parallax>
-      {
-        merchs.map((merch,index)=>(
-          <Parallax key={index} speed={10} opacity={[0,2.5]} className={`Merch ${index % 2 === 0 ? "mt-5" : "mb-5"} mt-5`}>
-            <Merch merch={merch} index={index}/>
-          </Parallax>
-        ))
-      }
+      <Parallax speed={10} opacity={[0,2.5]} className={`Merch row m-auto`}>
+        <div className="MerchBanner row h-75 mb-5 m-auto">
+              <img className='w-100 p-0' src="/Images/55.png" alt="" />
+        </div>
+        {
+          !token.token && <h5 className="mt-5 pt-5 text-center text-danger">Please Login To Buy Merchs</h5> 
+        }
+        {
+          merchs.map((merch,index)=>(
+              <Merch key={index} merch={merch} index={index}/>
+          ))
+        }
+        <div className="MerchBanner row h-75 my-5 m-auto">
+              <img className='w-100 p-0' src="/Images/on the way_.png" alt="" />
+        </div>
+      </Parallax>
     </div>
   )
 }

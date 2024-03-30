@@ -3,9 +3,10 @@ import './Prints.css'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import Print from './Print'
+import { useCookies } from 'react-cookie'
 
 const Prints = () => {
-
+  const [token] = useCookies(['token'])
   const [prints,setPrints] = useState([])
 
     useEffect(()=>{
@@ -26,6 +27,9 @@ const Prints = () => {
   return (
     <div>
       <Parallax className='my-5' speed={-15} opacity={[2.5,0]}>
+            {
+              !token.token && <h5 className="mt-5 pt-5 text-center text-danger">Please Login To Buy Prints</h5> 
+            }
         <div className="PrintBanner my-5 py-5 row w-100 mx-0">
             <img className='p-0' src="/Images/Print Your life.png" alt="" />
         </div>

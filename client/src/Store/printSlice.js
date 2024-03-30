@@ -20,10 +20,13 @@ const printSlice = createSlice({
         },
         removeFromCart: (state,action)=>{
             state.prints = state.prints.filter(m => m.id !== action.payload)
+        },
+        videPrints:(state)=>{
+            state.prints = [];
         }
     }
 })
 
-export const { addToCart , removeFromCart , removeOneFromCart } = printSlice.actions
+export const { addToCart , removeFromCart , removeOneFromCart , videPrints } = printSlice.actions
 
 export default printSlice.reducer

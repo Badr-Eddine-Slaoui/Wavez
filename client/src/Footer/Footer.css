@@ -1,25 +1,26 @@
-.Menu a{
-    color: #000000;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bolder;
-    margin: 0;
-}
-
-.Quote{
-    width: 95%;
+.Footer{
+    width: 100%;
     margin: auto;
+    background-image: url('../../public/Images/Rectangle 6.png');
+    background-position: center;
+    background-size: cover;
 }
-.Quote p{
+.Footer p{
     display: flex;
     justify-content: space-around;
 }
-.Quote .MinText{
+.Footer .MinText{
     font-weight: bolder;
     text-transform: uppercase;
     font-size: 4vh;
 }
-.Quote .StyledText{
+.Footer .StyledText{
     font-family: "Edwardian Script ITC";
     font-size: 30vh;
+}
+.Sub::placeholder{
+    color: rgba(128, 128, 128, 0.651);
+}
+.Links{
+    width: 90%;
 }

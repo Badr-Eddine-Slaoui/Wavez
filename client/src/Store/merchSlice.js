@@ -20,10 +20,13 @@ const merchSlice = createSlice({
         },
         removeFromCart: (state,action)=>{
             state.merchs = state.merchs.filter(m => m.id !== action.payload)
+        },
+        videMerch:(state)=>{
+            state.merchs = [];
         }
     }
 })
 
-export const { addToCart , removeFromCart , removeOneFromCart } = merchSlice.actions
+export const { addToCart , removeFromCart , removeOneFromCart , videMerch } = merchSlice.actions
 
 export default merchSlice.reducer

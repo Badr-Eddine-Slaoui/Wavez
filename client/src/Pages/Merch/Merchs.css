@@ -1,3 +1,8 @@
+.Merch{
+    margin: auto;
+    width: 80%;
+}
+
 .MerchBanner{
     height: 100vh;
     display: flex;

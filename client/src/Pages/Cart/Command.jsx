@@ -10,7 +10,7 @@ const Command = ({command,type}) => {
     const dispatch = useDispatch()
 
   return (
-    <div className="Merch row justify-content-center align-items-center my-4 m-auto py-3 position-relative">
+    <div className="MerchCart row justify-content-center align-items-center my-4 m-auto py-3 position-relative">
         <div className="Remove position-absolute top-0 end-0">
             <FontAwesomeIcon icon={faClose} onClick={()=>dispatch( type === 'merch' ? removeMerch(command.id) : removePrint(command.id))}/>
         </div>
@@ -18,7 +18,7 @@ const Command = ({command,type}) => {
             <img className="w-50" src={command.image} alt={command.title} />
         </div>
         <div className="col-6 mt-3">
-            <div className="row">
+            <div className="row mx-0">
                 <h4>{command.title}</h4>
                 <p className="MerchDescription">{command.description}</p>
             </div>

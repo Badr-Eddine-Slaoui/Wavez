@@ -1,40 +1,34 @@
 import propTypes from 'prop-types'
 import { useDispatch } from 'react-redux'
 import { addToCart } from "../../Store/merchSlice"
-import { useNavigate } from 'react-router-dom'
+import { useCookies } from 'react-cookie'
 
 const Merch = ({merch,index}) => {
 
+  const [token] = useCookies(['token'])
+
   const dispatch = useDispatch()
-  const navigate = useNavigate()
 
   return(
-      <div className={`row my-3 justify-content-center align-items-center gap-5 ${index % 2 !== 0 && "flex-row-reverse"}`}>
-        <div className="col-3 d-flex justify-content-center align-items-center">
-          <div className="ImgContainer">
-            <img className='w-100' src={merch.image} alt={merch.title} />
+    <div className="col-6">
+    <div className="card w-50 m-auto border-0 bg-transparent">
+      <img className="card-img-top" src={merch.image} alt="Title" />
+      <div className="card-body px-0 pb-0">
+        <h4 className="my-2 text-center text-uppercase fw-bolder fs-6">{merch.title}</h4>
+        <div className="row mx-0">
+          <div className="col-8">
+              <p className="">{merch.description}</p>
           </div>
-        </div>
-        <div className="col-3 p-0">
-          <div className={`TextContainer ${index % 2 !== 0 && "Reversed"}`}>
-            <h2>{merch.title}</h2>
-            <p className='mb-5'>{merch.description}</p>
-            <div className="row mt-5 justify-content-center">
-              <div className="col-6">
-                <button className='Btn w-100' onClick={()=>{dispatch(addToCart(merch));navigate('/cart')}}>Buy</button>
-              </div>
-              <div className="col-6">
-                <button className='Btn w-100' onClick={()=>dispatch(addToCart(merch))}>Add <span>to</span> cart</button>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="col-3">
-          <div className={`ImgContainer Arrow ${index % 2 !== 0 && "Reversed"}`}>
-            <img className='w-75' src="/public/Images/lines (30).png" alt="" />
+          <div className="col-4">
+            <p className="text-end">{merch.price}$</p>
           </div>
         </div>
       </div>
+      <div className="card-footer px-0 bg-transparent border-0">
+        <button className="w-100 btn btn-dark rounded-0" disabled={!token.token && true} onClick={()=>dispatch(addToCart(merch))}>Add To Cart</button>
+      </div>
+    </div>
+  </div>
   )
 }
 

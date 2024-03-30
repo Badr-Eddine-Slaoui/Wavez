@@ -3,9 +3,11 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { addToCart } from '../../Store/printSlice';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { useCookies } from 'react-cookie';
 
 const Print = ({print,index}) => {
 
+    const [token] = useCookies(['token'])
     const dispatch = useDispatch()
     const navigate = useNavigate()
   
@@ -25,10 +27,10 @@ const Print = ({print,index}) => {
                     <div className="card-footer p-0 bg-transparent border-0">
                         <div className="row justify-content-center">
                             <div className="col-6">
-                                <button className='Btn w-100' onClick={()=>dispatch(addToCart(print))}>Buy</button>
+                                <button className='Btn w-100' disabled={!token.token && true} onClick={()=>dispatch(addToCart(print))}>Buy</button>
                             </div>
                             <div className="col-6">
-                                <button className='Btn Pay w-100' onClick={()=>{dispatch(addToCart(print));navigate('/cart')}}>Pay</button>
+                                <button className='Btn Pay w-100' disabled={!token.token && true} onClick={()=>{dispatch(addToCart(print));navigate('/cart')}}>Pay</button>
                             </div>
                         </div>
                     </div>
@@ -51,7 +53,7 @@ const Print = ({print,index}) => {
                             </div>
                         </div>
                         <div className="col-4 d-flex">
-                        <LazyLoadImage effect='blur' className='Roma m-auto' src="/Images/roma right.png" alt="Roma Right"/>
+                        <LazyLoadImage effect='blur' className='Roma m-auto float-end' src="/Images/roma right.png" alt="Roma Right"/>
                         </div>
                     </div>
                )
